@@ -29,9 +29,12 @@
 	<!-- <a-scene artoolkit='sourceType: image; sourceUrl:../../data/images/screenshot.png'> -->
 	<!-- <a-scene embedded artoolkit='sourceType: image; sourceUrl:../../data/images/armchair.jpg;'> -->
 
-		
+		<a-assets>
+			<a-asset-item id="assetAframe" src="models/castle.ply"></a-asset-item>
+		</a-assets>
 
 	    <a-marker preset='hiro'>
+		    <a-entity ply-model="src: #assetAframe" rotation='0 0 0'scale='0.02 0.02 0.02'></a-entity>
 			<a-text value="Hello, World!"></a-text>
 	    </a-marker>
 		
